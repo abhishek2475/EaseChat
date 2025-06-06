@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun ./src/index.ts",
+    "build": "bun build ./src/index.ts --outdir=./dist --target=node --format=cjs",
+    "start": "bun ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@google/genai": "^0.12.0",
+    "@repo/db": "*",
+    "@types/express": "^5.0.1",
+    "@types/socket.io": "^3.0.2",
+    "express": "^5.1.0"
+  }
+}
