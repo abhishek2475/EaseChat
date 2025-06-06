@@ -13,12 +13,7 @@ An AI-powered chat widget you can drop into any website, plus a modern dashboard
    1. [Prerequisites](#prerequisites)
    2. [Install & Dev](#install--dev)
    3. [Environment Variables](#environment-variables)
-5. [Project Structure](#project-structure)
-6. [Embedding the Widget](#embedding-the-widget)
-7. [Deployment & Demos](#deployment--demos)
-8. [Challenges & Solutions](#challenges--solutions)
-9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ---
 
@@ -68,7 +63,7 @@ An AI-powered chat widget you can drop into any website, plus a modern dashboard
 Clone & install:
 
 ```bash
-git clone https://github.com/aadithya2112/EaseChat
+git clone https://github.com/abhishek2475/EaseChat
 cd EaseChat
 # install everything
 bun install
@@ -118,19 +113,6 @@ DATABASE_URL="postgres://user:pass@localhost:5432/db" # Same as web
 
 ```
 
-## Project Structure
-
-```
-
-/
-├─ apps/
-│ ├─ chat-widget/ # React widget (Vite)
-│ ├─ web/ # Dashboard & HTTP API (Next.js)
-│ └─ backend/ # WebSocket server (Bun + Express)
-└─ packages/
-├─ db/ # Prisma client & migrations
-
-````
 
 
 
